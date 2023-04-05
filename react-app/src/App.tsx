@@ -1,5 +1,6 @@
 import ListGroup from "./components/ListGroups";
 import MouseFollower from "./components/MouseFollower";
+import Navbar from "./components/Navbar";
 
 function App() {
   let items = ["paris", "london", "canada", "autralia", "punjab", "usa"];
@@ -11,8 +12,8 @@ function App() {
   return (
     <>
       <div>
-        {/* <ListGroup items={items} heading="cities" onSelectItem={selectHandle} /> */}
         <MouseFollower />
+        <Navbar />
       </div>
     </>
   );

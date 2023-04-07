@@ -4,10 +4,10 @@ body {
 }
 
 .cursor {
-  width: 18vh;
+  width: 10vw;
   height: 18vh;
-  background-color: aqua;
-  position: fixed;
+  background-color: rgba(0, 255, 255, 0.199);
+  position: absolute;
   /* border-radius: 1%; */
   filter: blur(80px);
   z-index: -1;
@@ -50,4 +50,25 @@ body {
 }
 .navbar-right a:nth-child(3) {
   margin-right: 2vh;
+}
+
+.containerBox {
+  position: relative;
+  height: 94vh;
+  width: 97%;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1568627451);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  /* border: 10px #5d6298 solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=App.css.map */

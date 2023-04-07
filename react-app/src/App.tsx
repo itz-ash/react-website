@@ -12,8 +12,12 @@ function App() {
   return (
     <>
       <div>
-        <MouseFollower />
-        <Navbar />
+        <div className="container">
+          <div className="containerBox">
+            <MouseFollower />
+            {/* <Navbar /> */}
+          </div>
+        </div>
       </div>
     </>
   );

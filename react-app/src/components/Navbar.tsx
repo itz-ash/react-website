@@ -14,6 +14,7 @@ function Navbar() {
             <a href="/">About</a>
             <a href="/">Contact</a>
           </div>
+          {/* <button className="btn">utton</button> */}
         </nav>
       </header>
     </>

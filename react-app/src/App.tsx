@@ -1,5 +1,5 @@
 import ListGroup from "./components/ListGroups";
-import ProjectTemplate from "./utils/projectTemplate";
+import ProjectTemplate from "./utils/ProjectTemplate";
 import MouseFollower from "./components/MouseFollower";
 import Navbar from "./components/Navbar";
 function App() {

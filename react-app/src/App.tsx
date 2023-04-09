@@ -2,6 +2,8 @@ import ListGroup from "./components/ListGroups";
 import ProjectTemplate from "./utils/ProjectTemplate";
 import MouseFollower from "./components/MouseFollower";
 import Navbar from "./components/Navbar";
+import { useState } from "react";
+
 function App() {
   return (
     <>
@@ -13,9 +15,13 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container-2">
-        <div className="test">
-          <ProjectTemplate />
+      <div className="gradient">
+        <div className="projectContainer">
+          <ProjectTemplate
+            thumbnail="./src/assets/placeholder.jpg"
+            landingPage="#"
+            description="placeholder"
+          />
         </div>
       </div>
     </>

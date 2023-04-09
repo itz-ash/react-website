@@ -1,14 +1,22 @@
 
-
-body {
-  background-color: rgb(0, 0, 0);
-  font-family: sans-serif;
-}
-
 * {
   color: white;
 }
 
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  // position: fixed;
+}
+
+.gradient {
+    background: radial-gradient(rgba(255, 255, 255, 0.048) 10%,transparent 8%);
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin;
+    z-index: -7;
+    transition: all ease;
+    // position: fixed;
+}
 
 .cursor {
   width: 10vw;
@@ -107,7 +115,43 @@ body {
   justify-content: center;
   align-items: center;
 }
+.projectContainer {
+  // border: 1px solid white;
+  // width: 100%;
+  display: flex;
+  justify-content: center;
 
-.projects {
+}
+.project {
   color: white;
+  // border: 1px solid greenyellow;
+  display: flex; 
+}
+.projectThumbnail {
+  width: 35vw;
+  // border: 1px white solid;
+}
+
+.projectDescription{
+  display: inline;
+  margin-top: 20%;
+  margin-left: 2%;
+  // border: 1px white solid;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  width: 20vw;
+
+  & p{
+    font-size: large;
+  }
+
+}
+
+
+
+.techs {
+  padding-top: 10%;
+  bottom: 0px;
+  padding-bottom: 0%;
+  color: rgba(255, 255, 255, 0.264);
 }

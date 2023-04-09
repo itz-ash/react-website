@@ -1,10 +1,18 @@
+* {
+  color: white;
+}
+
 body {
   background-color: rgb(0, 0, 0);
   font-family: sans-serif;
 }
 
-* {
-  color: white;
+.gradient {
+  background: radial-gradient(rgba(255, 255, 255, 0.048) 10%, transparent 8%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  z-index: -7;
+  transition: all ease;
 }
 
 .cursor {
@@ -101,6 +109,35 @@ body {
   align-items: center;
 }
 
-.projects {
+.projectContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
   color: white;
+  display: flex;
+}
+
+.projectThumbnail {
+  width: 35vw;
+}
+
+.projectDescription {
+  display: inline;
+  margin-top: 20%;
+  margin-left: 2%;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  width: 20vw;
+}
+.projectDescription p {
+  font-size: large;
+}
+
+.techs {
+  padding-top: 10%;
+  bottom: 0px;
+  padding-bottom: 0%;
+  color: rgba(255, 255, 255, 0.264);
 }/*# sourceMappingURL=App.css.map */

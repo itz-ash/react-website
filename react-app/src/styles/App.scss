@@ -18,14 +18,28 @@ body {
     // position: fixed;
 }
 
-.cursor {
-  width: 10vw;
-  height: 18vh;
-  background-color: rgba(0, 255, 255, 0.199);
+#cursor {
+  height: 700px;
+  aspect-ratio: 1;
+  background-color: white;
+  // background-color: rgba(0, 255, 255, 0.199);
   position: absolute;
-  /* border-radius: 1%; */
-  filter: blur(80px);
+  left: 50%;
+  right: 50%;
+  translate: (-50%,-50%);
+  border-radius: 50%;
+  // filter: blur(80px);
   z-index: -1;
+  background: linear-gradient(to right, aquamarine,mediumpurple);
+  animation: rotate 20s infinite;
+}
+
+.blurEffect{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  backdrop-filter: blur(200px);
 }
 
 .header {
@@ -98,8 +112,8 @@ body {
   position: relative;
   height: 94vh;
   width: 97%;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid #ffffff28;
+  // background-color: rgba(255, 255, 255, 0.03);
+  // border: 1px solid #ffffff28;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -129,6 +143,8 @@ body {
 }
 .projectThumbnail {
   width: 35vw;
+  object-fit: cover;
+  background-size: 200%;
   // border: 1px white solid;
 }
 
@@ -154,4 +170,16 @@ body {
   bottom: 0px;
   padding-bottom: 0%;
   color: rgba(255, 255, 255, 0.264);
+}
+
+@keyframes rotate{
+  from{
+    rotate: 0deg;
+  }
+  50%{
+    scale: 1 1.5;
+  }
+  to {
+    rotate: 360deg;
+  }
 }

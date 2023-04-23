@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
 @import url("https://rsms.me/inter/inter.css");
-
 html {
   font-family: "Inter", sans-serif;
-
 }
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
   }
 }
-
 * {
   color: white;
 }
@@ -21,36 +19,34 @@ body {
 }
 
 .gradient {
-    background: radial-gradient(rgba(255, 255, 255, 0.048) 10%,transparent 8%);
-    background-position: 0% 0%;
-    background-size: 5vmin 5vmin;
-    z-index: -7;
-    transition: all ease;
-    // position: fixed;
+  background: radial-gradient(rgba(255, 255, 255, 0.048) 10%, transparent 8%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  z-index: -7;
+  transition: all ease;
 }
 
 #cursor {
   height: 700px;
   aspect-ratio: 1;
   background-color: white;
-  // background-color: rgba(0, 255, 255, 0.199);
   position: absolute;
   left: 50%;
   right: 50%;
-  translate: (-50%,-50%);
+  translate: -50%, -50%;
   border-radius: 50%;
-  // filter: blur(80px);
   z-index: -1;
-  background: linear-gradient(to right, #ff4e02,#7c51fc);
+  background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 20s infinite;
 }
 
-.blurEffect{
+.blurEffect {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
-  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(300px);
+          backdrop-filter: blur(300px);
 }
 
 .header {
@@ -102,21 +98,18 @@ body {
   margin-right: 3.5%;
   margin-left: 0.7%;
   cursor: pointer;
-
-  &:hover {
-    background-color: rgb(37, 37, 126);
-  }
 }
-
+.btn:hover {
+  background-color: rgb(37, 37, 126);
+}
 
 .navbar-right a {
   margin-left: 2vh;
   text-decoration: none;
   color: white;
-
-  &:nth-child(3) {
-    margin-right: 2vh;
-  }
+}
+.navbar-right a:nth-child(3) {
+  margin-right: 2vh;
 }
 
 .containerBox {
@@ -132,41 +125,39 @@ body {
 .container {
   height: 100vh;
   width: 100%;
+  /* border: 10px #5d6298 solid; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .projectContainer {
-  // border: 1px solid white;
-  // width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .project {
   color: white;
-  // border: 1px solid greenyellow;
   display: flex;
 }
+
 .projectThumbnail {
   width: 35vw;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: 200%;
-  // border: 1px white solid;
 }
 
-.projectDescription{
+.projectDescription {
   display: inline;
   margin-top: 20%;
   margin-left: 2%;
-  // border: 1px white solid;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.6);
   width: 20vw;
-
-  & p{
-    font-size: large;
-  }
-
+}
+.projectDescription p {
+  font-size: large;
 }
 
 .techs {
@@ -177,21 +168,18 @@ body {
 }
 
 .para {
-  font-size: larger ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  font-size: larger;
+  color: #f50909;
 }
 
-@keyframes rotate{
-  from{
+@keyframes rotate {
+  from {
     rotate: 0deg;
   }
-  50%{
+  50% {
     scale: 1 1.5;
   }
   to {
     rotate: 360deg;
   }
-}
+}/*# sourceMappingURL=App.css.map */

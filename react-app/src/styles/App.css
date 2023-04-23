@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
 * {
   color: white;
 }
@@ -25,7 +36,7 @@ body {
   translate: -50%, -50%;
   border-radius: 50%;
   z-index: -1;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: linear-gradient(to right, #ff4e02, #7c51fc);
   animation: rotate 20s infinite;
 }
 
@@ -34,8 +45,8 @@ body {
   width: 100%;
   position: absolute;
   z-index: -1;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px);
+  -webkit-backdrop-filter: blur(300px);
+          backdrop-filter: blur(300px);
 }
 
 .header {
@@ -114,7 +125,6 @@ body {
 .container {
   height: 100vh;
   width: 100%;
-  /* border: 10px #5d6298 solid; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,6 +164,13 @@ body {
   bottom: 0px;
   padding-bottom: 0%;
   color: rgba(255, 255, 255, 0.264);
+}
+
+.para {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes rotate {

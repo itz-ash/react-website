@@ -11,7 +11,9 @@ function Project(props: Props) {
       <div className="project">
         <img src={props.thumbnail} className="projectThumbnail"></img>
         <div className="projectDescription">
-          <p>{props.description} description website 3d for clothes</p>
+          <p>
+            {props.description} placeholderplaceholderplaceholderplaceholder
+          </p>
           <p className="techs">Technologies used:</p>
         </div>
       </div>
